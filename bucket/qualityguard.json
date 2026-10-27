@@ -3,11 +3,14 @@
   "description": "Code quality engine and Quality Gate for CI pipelines",
   "homepage": "https://github.com/francescopaolopassaro/QualityGuard",
   "license": "Proprietary",
-  "url": "https://github.com/francescopaolopassaro/QualityGuard/releases/download/v1.0.8/qualityguard-v1.0.8-win-x64.zip",
-  "hash": "REPLACE_WITH_SHA256_OF_THE_RELEASE_ZIP",
+  "url": "https://github.com/francescopaolopassaro/QualityGuard/releases/download/v.1.0.8/qualityguard-v.1.0.8-win-x64.zip",
+  "hash": "13fd378063550f91b3a1e4889ee13f8bf6703806a68e99c7b2687cbceb56c8b1",
   "bin": "qualityguard.exe",
-  "checkver": "github",
+  "checkver": {
+    "github": "https://github.com/francescopaolopassaro/QualityGuard",
+    "regex": "tag/v\\.?([\\d.]+)"
+  },
   "autoupdate": {
-    "url": "https://github.com/francescopaolopassaro/QualityGuard/releases/download/v$version/qualityguard-v$version-win-x64.zip"
+    "url": "https://github.com/francescopaolopassaro/QualityGuard/releases/download/v.$version/qualityguard-v.$version-win-x64.zip"
   }
 }
